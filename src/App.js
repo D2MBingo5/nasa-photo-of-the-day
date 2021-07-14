@@ -13,6 +13,9 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
+      <footer className='App-footer'>        
+        <a className='App-link' href='https://apod.nasa.gov/apod/astropix.html'>Click here to go to the NASA website's APOD page!</a>
+      </footer>
     </div>
   );
 }
