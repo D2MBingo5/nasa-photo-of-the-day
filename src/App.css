@@ -40,11 +40,11 @@
   color: #61dafb;
 }
 
-.App-video {
-  outline-width: 1px;
-  outline-color: black;
-  width: 10%;
-  height: 10%;
+.App-insert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

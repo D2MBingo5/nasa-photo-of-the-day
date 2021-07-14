@@ -28,7 +28,7 @@ console.log(apod.date)
       </header>
       <div>
         <p>{apod.date} - {apod.title}</p>
-        <div className='App-video'>
+        <div className='App-insert'>
          <ReactPlayer url={apod.url} /> 
         </div> {/* Problem: This will only work on days where there is a video as the Picture of the Day. This can be made more dynamic by having a component in a separate file generate HTML depending on the content type (apod.media_type) */}
         <p>{apod.explanation}</p>
