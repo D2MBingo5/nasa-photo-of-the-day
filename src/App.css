@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #1E90FF;
 }
 
 .App-logo {
@@ -40,11 +41,18 @@
   color: #61dafb;
 }
 
-.App-insert {
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.p-area {
+  border-radius: 8px;
+  background-color: white;
+  width: 90%;
+  padding: 1%;
 }
 
 @keyframes App-logo-spin {
