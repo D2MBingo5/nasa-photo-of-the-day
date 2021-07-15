@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // api call
     console.log('in useEffect')
-    axios.get(`${BASE_URL}?api_key=${API_KEY}`) // For current day, remove ${SPEC_DATE} from the api call string
+    axios.get(`${BASE_URL}?api_key=${API_KEY}`) // For a specific date, add ${SPEC_DATE} to this api call string and change the SPEC_DATE const in constants/index.js. For current day, remove ${SPEC_DATE} 
       .then(res => {
         console.log(res.data)
         setApod(res.data)
