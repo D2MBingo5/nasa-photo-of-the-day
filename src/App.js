@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
-import { BASE_URL, API_KEY } from './constants/index'
+import { BASE_URL, API_KEY, SPEC_DATE } from './constants/index'
 import ReactPlayer from "react-player"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     // api call
     console.log('in useEffect')
-    axios.get(`${BASE_URL}?api_key=${API_KEY}`)
+    axios.get(`${BASE_URL}?api_key=${API_KEY}${SPEC_DATE}`)
       .then(res => {
         console.log(res.data)
         setApod(res.data)
@@ -30,6 +30,7 @@ console.log(apod.date)
         <p>{apod.date} - {apod.title}</p>
         <div className='App-insert'>
          <ReactPlayer url={apod.url} /> 
+         <img src={apod.url} alt='NASA APOD'></img> {/* TEMPORARY SOLUTION */}
         </div> {/* Problem: This will only work on days where there is a video as the Picture of the Day. This can be made more dynamic by having a component in a separate file generate HTML depending on the content type (apod.media_type) */}
         <p>{apod.explanation}</p>
       </div>      
