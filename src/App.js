@@ -37,18 +37,24 @@ function App() {
     color: ${props => props.theme.white};
   `
   const StyledFooter = styled.footer`
-  background-color: ${props => props.theme.secondaryColor};
-  max-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: ${props => props.theme.white};
-  padding: 2vh;
+    background-color: ${props => props.theme.secondaryColor};
+    max-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: ${props => props.theme.white};
+    padding: 2vh;
   `
   const StyledLink = styled.a`
-  color: ${props => props.theme.linkColor};
+    color: ${props => props.theme.linkColor};
+    
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      color: ${props => props.theme.white};
+    }
   `
   const ContentContainer = styled.div`
     display: flex;
