@@ -5,7 +5,6 @@ import { BASE_URL, API_KEY } from './constants/index'
 import ReactPlayer from "react-player"
 import styled from "styled-components"
 // import theme from './theme'
-// Test
 
 function App() {
   const [apod, setApod] = useState('')
