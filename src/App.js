@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
-import { BASE_URL, API_KEY, SPEC_DATE } from './constants/index'
+import { BASE_URL, API_KEY } from './constants/index'
 import ReactPlayer from "react-player"
 import styled from "styled-components"
 // import theme from './theme'
